@@ -3,21 +3,21 @@ import java.util.Scanner;
 class Ex1 {
   public static void main(String[] args) {
 
-    Scanner aluno = new Scanner(System.in);
+    Scanner leitor = new Scanner(System.in);
 
     System.out.println("Digite o número da matricula: ");
-    int matricula = aluno.nextInt();
+    int matricula = leitor.nextInt();
 
-    aluno.nextLine(); // inserido para a quebra de linha dependente.
+    leitor.nextLine(); // inserido para a quebra de linha dependente.
 
     System.out.println("Nome do Aluno: ");
-    String nome = aluno.nextLine();
+    String nome = leitor.nextLine();
 
     System.out.println("Digite a nota A: ");
-    double a = aluno.nextDouble();
+    double a = leitor.nextDouble();
 
     System.out.println("Digite a nota B: ");
-    double b = aluno.nextDouble();
+    double b = leitor.nextDouble();
 
     double resultado = (a + b) / 2;
     String situacao;
@@ -31,6 +31,6 @@ class Ex1 {
     System.out.println("\nMatricula: " + matricula + "\nNome do aluno(a):" + nome + "\nSituação: " + situacao
         + "\nNota final: " + resultado);
 
-    aluno.close();
+    leitor.close();
   }
 }
